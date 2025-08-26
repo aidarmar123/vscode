@@ -708,7 +708,8 @@ export class TextAreaEditContext extends AbstractEditContext {
 				//      `Math.round(end) - Math.round(start)`
 				// vs
 				//      `Math.round(end - start)`
-				let width = visibleEnd.left - visibleStart.left + 1;
+				let width = visibleEnd.left - visibleStart.left + 10;
+				console.log("Wdith in vscode", width)
 				if (left < this._contentLeft) {
 					// the textarea would be rendered on top of the margin,
 					// so reduce its width. We use the same technique as
